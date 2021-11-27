@@ -2,7 +2,8 @@ import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.css';
 import '@fortawesome/fontawesome-free/css/all.min.css'
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css"
+import "slick-carousel/slick/slick-theme.css";
+import '../styles/project1.css';
 
 function MyApp({Component, pageProps}) {
   return <Component {...pageProps} />
