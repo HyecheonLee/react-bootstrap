@@ -72,13 +72,13 @@ const Index = () => {
             <div className="container-xxl text-white">
               <div className="row align-items-center">
                 <div className="col-md-9 welcome">
-                  <h1 className="welcom-title fw-light">
+                  <h1 className="welcome-title fw-light">
                     Welcom to <span
                     className="text-warning fw-bold">my first website.</span>Lorem ipsum
                     dolor sit amet,
                     consectetur adipisicing elit. Incidunt, saepe!
                   </h1>
-                  <div className="divider"></div>
+                  <div className="divider"/>
                   <div className="row-cols-4 welcome-desc">
                     <p className="col-sm-10 col-md-12 lead">
                       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci,
