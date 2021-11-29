@@ -10,10 +10,8 @@ const IntroSection = () => {
             <div className="col-md-6 intro-first">
               <div className="row px-md-3">
                 <div className="col-6">
-                  <div
-                    className="card card-body my-3 position0relative rounded-3 shadow-lg intro-first-card">
-                    <div
-                      className="overlay d-flex justify-content-center align-items-center position-absolute h-100 w-100 shadow-lg">
+                  <div className="card card-body my-3 position-relative rounded-3 shadow-lg intro-first-card">
+                    <div className="overlay d-flex justify-content-center align-items-center position-absolute h-100 w-100 shadow-lg">
                       <h3 className="fw-light">
                         <Link href="#">
                           <a className="link-light text-decoration-none">Link 1</a>
@@ -24,7 +22,7 @@ const IntroSection = () => {
                 </div>
                 <div className="col-6">
                   <div
-                    className="card card-body my-3 position0relative rounded-3 shadow-lg intro-first-card">
+                    className="card card-body my-3 position-relative rounded-3 shadow-lg intro-first-card">
                     <div
                       className="overlay d-flex justify-content-center align-items-center position-absolute h-100 w-100 shadow-lg">
                       <h3 className="fw-light">
@@ -37,7 +35,7 @@ const IntroSection = () => {
                 </div>
                 <div className="col-6">
                   <div
-                    className="card card-body my-3 position0relative rounded-3 shadow-lg intro-first-card">
+                    className="card card-body my-3 position-relative rounded-3 shadow-lg intro-first-card">
                     <div
                       className="overlay d-flex justify-content-center align-items-center position-absolute h-100 w-100 shadow-lg">
                       <h3 className="fw-light">
@@ -50,7 +48,7 @@ const IntroSection = () => {
                 </div>
                 <div className="col-6">
                   <div
-                    className="card card-body my-3 position0relative rounded-3 shadow-lg intro-first-card">
+                    className="card card-body my-3 position-relative rounded-3 shadow-lg intro-first-card">
                     <div
                       className="overlay d-flex justify-content-center align-items-center position-absolute h-100 w-100 shadow-lg">
                       <h3 className="fw-light">

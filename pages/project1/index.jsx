@@ -6,6 +6,7 @@ import NavbarCollapse from "react-bootstrap/NavbarCollapse";
 import TopSection from "../../components/project1/TopSection";
 import IntroSection from "../../components/project1/IntroSection";
 import NavbarSection from "../../components/project1/NavbarSection";
+import ServicesSection from "../../components/project1/ServicesSection";
 
 const Index = () => {
   return (
@@ -17,6 +18,7 @@ const Index = () => {
         <NavbarSection/>
         <TopSection/>
         <IntroSection/>
+        <ServicesSection/>
       </>
     </>
   );
