@@ -1,6 +1,5 @@
 import React from 'react';
 import Slider from "react-slick";
-import {Image} from "react-bootstrap";
 
 const ServicesSection = () => {
   const setting = {

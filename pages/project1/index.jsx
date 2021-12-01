@@ -7,6 +7,8 @@ import TopSection from "../../components/project1/TopSection";
 import IntroSection from "../../components/project1/IntroSection";
 import NavbarSection from "../../components/project1/NavbarSection";
 import ServicesSection from "../../components/project1/ServicesSection";
+import SloganSection from "../../components/project1/SloganSection";
+import FeaturesSection from "../../components/project1/FeaturesSection";
 
 const Index = () => {
   return (
@@ -19,6 +21,8 @@ const Index = () => {
         <TopSection/>
         <IntroSection/>
         <ServicesSection/>
+        <SloganSection/>
+        <FeaturesSection/>
       </>
     </>
   );

@@ -101,3 +101,22 @@
 #services .slick-slide > div {
     margin: 0 0.5rem;
 }
+
+#slogan {
+    background-image: url("/images/bg-cta.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+}
+
+#slogan .slogan-card {
+    background-color: rgba(255, 255, 255, .85);
+    color: #000;
+    transition: all 0.4s ease;
+
+}
+
+#slogan .slogan-card:hover {
+    background: #ffffff;
+
+}
