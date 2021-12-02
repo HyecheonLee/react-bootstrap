@@ -11,12 +11,12 @@ const SloganSection = () => {
               <div className="card card-body slogan-card">
                 <h1 className="mb-3">Our Slogan...</h1>
                 <p className={"lead"}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis,
-                  iusto?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at
+                  deserunt dicta ducimus eius error fugiat sunt vitae! Atque, explicabo.
                 </p>
                 <p className={"lead"}>
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis,
-                  iusto?
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto at
+                  deserunt dicta ducimus eius error fugiat sunt vitae! Atque, explicabo.
                 </p>
               </div>
             </div>
