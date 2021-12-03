@@ -11,6 +11,7 @@ import SloganSection from "../../components/project1/SloganSection";
 import FeaturesSection from "../../components/project1/FeaturesSection";
 import GallerySection from "../../components/project1/GallerySection";
 import CtaSection from "../../components/project1/CtaSection";
+import FindUsSection from "../../components/project1/FindUsSection";
 
 const Index = () => {
   return (
@@ -27,6 +28,7 @@ const Index = () => {
         <FeaturesSection/>
         <GallerySection/>
         <CtaSection/>
+        <FindUsSection/>
       </>
     </>
   );
