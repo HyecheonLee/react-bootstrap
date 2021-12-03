@@ -16,7 +16,8 @@ const GallerySection = () => {
           <div className={"gallery-body row"}>
             <div className={"col-md-4 col-sm-6 mb-4 gallery-item"}>
               <div className={"card card-body border-0 p-0"}>
-                <div className={"overlay d-flex flex-column justify-content-center align-items-center h-100 w-100 border-2"}>
+                <div
+                  className={"overlay d-flex flex-column justify-content-center align-items-center h-100 w-100 border-2"}>
                   <h2 className={"gallery-title"}>Gallery 1</h2>
                   <a href={"#"} className={"link-warning text-decoration-none"}>View
                     this gallery</a>
