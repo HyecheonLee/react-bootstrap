@@ -12,6 +12,7 @@ import FeaturesSection from "../../components/project1/FeaturesSection";
 import GallerySection from "../../components/project1/GallerySection";
 import CtaSection from "../../components/project1/CtaSection";
 import FindUsSection from "../../components/project1/FindUsSection";
+import FooterSection from "../../components/project1/FooterSection";
 
 const Index = () => {
   return (
@@ -29,6 +30,7 @@ const Index = () => {
         <GallerySection/>
         <CtaSection/>
         <FindUsSection/>
+        <FooterSection/>
       </>
     </>
   );
