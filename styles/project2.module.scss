@@ -1,3 +1,5 @@
+$brand-green: #0e2d16;
+
 .body {
   background-color: pink;
 }
@@ -27,5 +29,25 @@
 }
 
 .navPrimary {
-  background-color: #0e2d16;
+  background-color: $brand-green;
+}
+
+.offcanvas {
+  width: 300px !important;
+}
+
+.mobileMenu {
+  a {
+    font-size: 1.1rem !important;
+
+    & .active {
+      font-weight: bold !important;
+      color: $brand-green;
+    }
+  }
+
+  li {
+    padding: 0.75rem;
+    line-height: 1.75;
+  }
 }

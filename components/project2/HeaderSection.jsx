@@ -7,7 +7,10 @@ import {
   Navbar,
   NavDropdown,
   OverlayTrigger,
-  Tooltip
+  Tooltip,
+  Offcanvas,
+  FormControl,
+  Button, Form
 } from "react-bootstrap";
 
 const HeaderSection = () => {
@@ -69,8 +72,7 @@ const HeaderSection = () => {
                         href="/project2">
             <img className={"img-fluid"} src="/project2/images/dummy-logo.png"/>
           </Navbar.Brand>
-          <Navbar.Toggle aria-controls="basic-navbar-nav"/>
-          <Navbar.Collapse className={styles.navTop} id="navPrimaryContent">
+          <Navbar.Collapse className={`d-none d-md-block ${styles.navTop}`}>
             <Nav className="mx-auto">
               <Nav.Link href="/project2">Home</Nav.Link>
               <NavDropdown title="Intro" id="basic-nav-dropdown">
@@ -87,6 +89,38 @@ const HeaderSection = () => {
                 className="fa fa-search"/></Nav.Link>
             </Nav>
           </Navbar.Collapse>
+          <Navbar.Toggle aria-controls="offcanvasNavbar"/>
+          <Navbar.Offcanvas
+            id="offcanvasNavbar"
+            className={styles.offcanvas}
+            aria-labelledby="offcanvasNavbarLabel"
+            placement="end">
+            <Offcanvas.Header closeButton>
+              <Offcanvas.Title id="offcanvasNavbarLabel">My Second web</Offcanvas.Title>
+            </Offcanvas.Header>
+            <Offcanvas.Body>
+              <ul className={`list-unstyled ${styles.mobileMenu}`}>
+                <li><a className="text-decoration-none link-dark active">Home</a></li>
+                <li>
+                  <a className="text-decoration-none link-dark">Intro</a>
+                  <ul className={"list-unstyled ms-3"}>
+                    <li><a className="text-decoration-none link-dark active">About us</a>
+                    </li>
+                    <li><a className="text-decoration-none link-dark active">Find us</a>
+                    </li>
+                  </ul>
+                </li>
+                <li><a className="text-decoration-none link-dark">Documents</a></li>
+                <li><a className="text-decoration-none link-dark">Gallery</a></li>
+                <li><a className="text-decoration-none link-dark">Blog</a></li>
+                <li><a className="text-decoration-none link-dark">Events</a></li>
+                <li><a className="text-decoration-none link-dark">Reviews</a></li>
+                <li><a className="text-decoration-none link-dark">Reservation</a></li>
+                <li><a className="btn btn-outline-secondary w-100"><i
+                  className="fa fa-search"/></a></li>
+              </ul>
+            </Offcanvas.Body>
+          </Navbar.Offcanvas>
         </Container>
       </Navbar>
     </header>
