@@ -1,5 +1,6 @@
 $brand-green: #0e2d16;
 $boxShadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
+$brandLightBeige: #aba097;
 
 .body {
   background-color: pink;
@@ -77,6 +78,37 @@ $boxShadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.
         background-color: rgba(255, 255, 255, 0.35);
       }
 
+    }
+  }
+}
+
+.frontPrograms {
+  .sectionContent {
+    padding: 4rem;
+  }
+
+  background-color: lighten($brandLightBeige, 25%);
+
+  .programItem {
+    border-radius: 1rem;
+
+    a {
+      color: $brand-green;
+
+      img {
+        border-radius: 1rem;
+        object-fit: cover;
+        object-position: center;
+        height: 180px;
+        width: 100%;
+        margin-bottom: 1rem;
+
+      }
+
+      p {
+        font-size: 1.1rem;
+
+      }
     }
   }
 }
