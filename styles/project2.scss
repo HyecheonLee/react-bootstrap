@@ -136,7 +136,7 @@ $brandYellowish: #b1a285;
     margin-top: 1rem;
     margin-bottom: 1rem;
 
-    & .card .card-body {
+    .card.card-body {
       background-color: lighten($brandYellowish, 20%);
       min-height: 20rem;
 
