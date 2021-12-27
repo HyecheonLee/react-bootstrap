@@ -2,6 +2,16 @@ $brand-green: #0e2d16;
 $boxShadow: 0 16px 24px 2px rgba(0, 0, 0, 0.14), 0 6px 30px 5px rgba(0, 0, 0, 0.12), 0 8px 10px -5px rgba(0, 0, 0, 0.2);
 $brandLightBeige: #aba097;
 $brandYellowish: #b1a285;
+$brandPurple: #93c;
+$brandBlue: #0d47a1;
+
+@mixin background($height) {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: $height;
+}
+
 .body {
   background-color: pink;
 }
@@ -65,12 +75,9 @@ $brandYellowish: #b1a285;
     box-shadow: $boxShadow;
 
     .carouseItem {
-
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat;
+      @include background(70vh);
       background-attachment: scroll;
-      height: 70vh;
+
 
       .carouselOverlay {
         height: 100%;
@@ -136,12 +143,63 @@ $brandYellowish: #b1a285;
     margin-top: 1rem;
     margin-bottom: 1rem;
 
-    .card.card-body {
+    & .card .card-body {
       background-color: lighten($brandYellowish, 20%);
       min-height: 20rem;
 
       p {
         font-size: 1.1rem;
+      }
+    }
+  }
+}
+
+.frontLatest {
+  background-color: lighten($brandLightBeige, 25%);
+
+  .latest-posts,
+  .latest-reviews {
+    &-header {
+      padding-left: 0.5rem;
+      border-left: 0.5rem solid $brandPurple;
+
+      h4 {
+        color: $brandPurple;
+      }
+    }
+
+    .latest-post,
+    .latest-review {
+      margin-bottom: 1rem;
+      border: 0;
+      box-shadow: $boxShadow;
+
+      &-featured {
+        height: 13rem;
+
+        & img {
+          border-top-left-radius: 0.25rem;
+          border-bottom-left-radius: 0.25rem;
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+        }
+      }
+
+      &-text {
+        a {
+          text-decoration: none;
+          color: $brandBlue;
+
+          &:hover {
+            color: lighten($brandBlue, 20%);
+          }
+        }
+
+        p {
+          font-size: 1.1rem;
+          font-weight: lighter;
+        }
       }
     }
   }
