@@ -4,6 +4,8 @@ $brandLightBeige: #aba097;
 $brandYellowish: #b1a285;
 $brandPurple: #93c;
 $brandBlue: #0d47a1;
+$brandRed: #c00;
+$rgbaWhiteStrong: rgba(255, 255, 255, 0.75);
 
 @mixin background($height) {
   background-position: center;
@@ -201,6 +203,36 @@ $brandBlue: #0d47a1;
           font-weight: lighter;
         }
       }
+    }
+  }
+}
+
+#frontMap {
+  position: relative;
+
+  #map {
+    height: 500px;
+  }
+
+  .contact-us {
+    color: #000000;
+    position: absolute;
+    font-size: 1.1rem;
+    top: 4rem;
+    right: 4rem;
+    padding: 2rem;
+    height: auto;
+    background-color: $rgbaWhiteStrong;
+    z-index: 3;
+    transition: 0.5s ease-in-out;
+
+    a {
+      color: $brandRed;
+    }
+
+    &:hover {
+      background-color: #ffffff;
+      box-shadow: $boxShadow;
     }
   }
 }
