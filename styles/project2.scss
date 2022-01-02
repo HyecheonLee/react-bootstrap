@@ -5,6 +5,7 @@ $brandYellowish: #b1a285;
 $brandPurple: #93c;
 $brandBlue: #0d47a1;
 $brandRed: #c00;
+$brandBeige: #807060;
 $rgbaWhiteStrong: rgba(255, 255, 255, 0.75);
 
 @mixin background($height) {
@@ -234,5 +235,35 @@ $rgbaWhiteStrong: rgba(255, 255, 255, 0.75);
       background-color: #ffffff;
       box-shadow: $boxShadow;
     }
+  }
+}
+
+#footer {
+  background-color: $brandBeige;
+  color: #ffffff;
+
+  .nav-footer {
+    a {
+      font-size: 1.1rem;
+    }
+  }
+
+  .footer-information {
+    p {
+      font-size: 1.1rem;
+      font-weight: 300;
+    }
+
+    .social {
+      margin-top: 0.75rem;
+      display: inline-block;
+    }
+  }
+
+  .copyright {
+    display: inline-block;
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-top: 1rem;
   }
 }

@@ -6,6 +6,7 @@ import FrontPrograms from "../../components/project2/FrontPrograms";
 import FrontInfos from "../../components/project2/FrontInfos";
 import FrontLatestSection from "../../components/project2/FrontLatestSection";
 import FrontMapSection from "../../components/project2/FrontMapSection";
+import FooterSection from "../../components/project2/FooterSection";
 
 const Index = () => {
   return (
@@ -20,6 +21,7 @@ const Index = () => {
       <FrontInfos/>
       <FrontLatestSection/>
       <FrontMapSection/>
+      <FooterSection/>
       </body>
     </>
   );
