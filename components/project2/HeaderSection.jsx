@@ -6,15 +6,15 @@ import {
   Nav,
   Navbar,
   NavDropdown,
-  OverlayTrigger,
-  Tooltip,
   Offcanvas,
-  FormControl,
-  Button, Form
+  OverlayTrigger,
+  Tooltip
 } from "react-bootstrap";
+import {useRouter} from "next/dist/client/router";
 
 const HeaderSection = () => {
-
+  const router = useRouter()
+  console.log(router);
   return (
     <header id="header" className={`${styles.wrapper}`}>
       <section id={"navTop"} className={`${styles.navTop} py-2 d-none d-md-block`}>
@@ -74,12 +74,14 @@ const HeaderSection = () => {
           </Navbar.Brand>
           <Navbar.Collapse className={`d-none d-md-block ${styles.navTop}`}>
             <Nav className="mx-auto">
-              <Nav.Link href="/project2">Home</Nav.Link>
+              <Nav.Link active={router.pathname === "/project2"}
+                        href="/project2">Home</Nav.Link>
               <NavDropdown title="Intro" id="basic-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">About us</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">Find us</NavDropdown.Item>
               </NavDropdown>
-              <Nav.Link href="/project2">Documents</Nav.Link>
+              <Nav.Link active={router.pathname === "/project2/page"}
+                        href="/project2/page">Documents</Nav.Link>
               <Nav.Link href="/project2">Gallery</Nav.Link>
               <Nav.Link href="/project2">Blog</Nav.Link>
               <Nav.Link href="/project2">Events</Nav.Link>

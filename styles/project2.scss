@@ -7,6 +7,12 @@ $brandBlue: #0d47a1;
 $brandRed: #c00;
 $brandBeige: #807060;
 $rgbaWhiteStrong: rgba(255, 255, 255, 0.75);
+$rgbaBlackLight: rgba(0, 0, 0, 0.35);
+@mixin overlay($bgColor:$rgbaBlackLight) {
+  height: 100%;
+  width: 100%;
+  background-color: $bgColor;
+}
 
 @mixin background($height) {
   background-position: center;
@@ -265,5 +271,21 @@ $rgbaWhiteStrong: rgba(255, 255, 255, 0.75);
     font-size: 0.9rem;
     font-weight: 300;
     margin-top: 1rem;
+  }
+}
+
+/*page*/
+#topBanner {
+  background-image: url('../public/project2/images/project-1.jpg');
+  @include background(60vh);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: $boxShadow;
+
+  .overlay {
+    @include overlay;
+    color: #ffffff;
+    border-radius: 0.75rem;
   }
 }
