@@ -330,3 +330,12 @@ $rgbaBlackLight: rgba(0, 0, 0, 0.35);
     }
   }
 }
+
+#postContent {
+  .post-meta {
+    .img-avatar {
+      width: 24px;
+      border-radius: 50%;
+    }
+  }
+}
